@@ -1,0 +1,97 @@
+@charset "UTF-8";
+body {
+  padding-top: 100px;
+}
+
+.flex-box-wrap {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.flex-item {
+  width: 40%;
+  border: 1px solid #000;
+  padding: 5%;
+  width: calc((100% - 50px) / 2);
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+}
+
+.img-wrap {
+  width: 100%;
+  margin: 0 auto;
+  height: 200px;
+  background: #ececec;
+  margin-bottom: 10px;
+}
+
+.flex-box p {
+  margin-bottom: 10px;
+}
+
+.btn-box {
+  text-align: center;
+  margin-top: auto;
+}
+
+.btn-txt {
+  background-color: aqua;
+  color: #fff;
+  width: 200px;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.border-box {
+  width: 300px;
+  height: 100px;
+  background: skyblue;
+  display: flex;
+  align-items: center;
+}
+.border-box.border:hover {
+  border: 5px solid lightgreen;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.border-box p {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.vertical {
+  padding-left: 50%;
+}
+.vertical .vertical-content p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.vertical .vertical-content p span {
+  /* ↓↓ 追加コード　↓↓ */
+  text-combine-upright: all;
+}
+
+body h1 {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+body .main-contents {
+  /* コメント残す */
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22sass/project/_flexbox.sass%22,%22sass/project/_project.sass%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AACA;EACE;;;AAEF;EACE;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACzCF;EACE;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;;AACF;EACE;EACA;EACA;;;AAIJ;EACE;;AAEE;EACE;EACA;;AACA;AACE;EACA;;;AAMN;EACE;EACA;;AAGF;AAEE;EACA;EACA%22,%22file%22:%22style.css%22%7D */

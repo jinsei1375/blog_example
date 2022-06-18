@@ -1,0 +1,46 @@
+@forward 'flexbox'
+
+
+//hover-box
+.border-box
+  width: 300px 
+  height: 100px
+  background: skyblue
+  display: flex
+  align-items: center
+  &.border:hover
+    border: 5px solid lightgreen
+    position: relative
+    top: -5px
+    left: -5px
+  p 
+    color: #fff
+    text-align: center
+    width: 100%
+
+
+//vertical
+.vertical
+  padding-left: 50%
+  .vertical-content
+    p 
+      writing-mode: vertical-rl
+      text-orientation: upright
+      span
+        /* ↓↓ 追加コード　↓↓ */
+        text-combine-upright: all
+
+
+//sass-compile
+
+body
+  h1
+    font-size: 20px
+    margin-bottom: 60px //1行コメント
+
+
+  .main-contents
+    //1行目コメント
+    /* コメント残す */
+    margin: 0 auto 
+    padding: 0
