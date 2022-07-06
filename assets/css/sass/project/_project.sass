@@ -33,11 +33,12 @@
 
 //sass-compile
 
-body
-  h1
-    font-size: 20px
-    margin-bottom: 60px //1行コメント
-    background: red
+
+h1
+  font-size: 20px
+  border-bottom: 5px solid red
+  border-image: linear-gradient(to right, red 0%,  pink 100%)
+  border-image-slice: 1
 
 
   .main-contents
@@ -49,3 +50,5 @@ body
 
 body
   -webkit-print-color-adjust: exact
+  width: 400px
+  margin: 0 auto
