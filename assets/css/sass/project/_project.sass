@@ -1,6 +1,7 @@
 @forward 'flexbox'
 
-
+body *
+  box-sizing: border-box
 //hover-box
 .border-box
   width: 300px 
@@ -61,3 +62,31 @@ body
   border-image: linear-gradient(to bottom, red 0%,  pink 100%) 1
   text-decoration: none
   color: #000
+
+
+.btn-clickable-wrap
+  margin-top: 50px
+  position: relative
+  width: 120px
+  height: 40px
+  .btn-clickable
+    display: block
+    text-decoration: none
+    color: #333
+    border: 2px solid red
+    text-align: center
+    height: 100%
+    line-height: 40px
+    font-weight: bold
+  .arrow
+    position: absolute
+    display: inline-block
+    content: ""
+    width: 8px
+    height: 8px
+    border-right: 2px solid #333
+    border-bottom: 2px solid #333
+    transform: translateY(-50%) rotate(-45deg)
+    top: 50%
+    right: 10px
+    pointer-events: none
