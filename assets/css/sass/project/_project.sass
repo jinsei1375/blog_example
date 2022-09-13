@@ -1,5 +1,6 @@
 @forward 'flexbox'
 
+
 body *
   box-sizing: border-box
 //hover-box
@@ -51,7 +52,6 @@ h1
 
 body
   -webkit-print-color-adjust: exact
-  width: 400px
   margin: 0 auto
 
 .btn-gra
@@ -90,3 +90,38 @@ body
     top: 50%
     right: 10px
     pointer-events: none
+
+.filter-wrapper
+  .filter-item-wrap
+    display: flex
+    width: 1000px
+    margin: 0 auto 80px
+    justify-content: space-between
+    &.blur
+      .img-wrap.refect img
+        filter: blur(5px)
+    &.brightness
+      .img-wrap.refect img
+        filter: brightness(0.5)
+    &.contrast
+      .img-wrap.refect img
+        filter: contrast(200%)
+    &.shadow
+      .img-wrap.refect img
+        filter: drop-shadow(20px 20px 20px rgba(0,0 ,0 ,0.8 ))
+    &.grayscale
+      .img-wrap.refect img
+        filter: grayscale(80%)
+    &.opacity
+      .img-wrap.refect img
+        filter: opacity(60%)
+    &.mix
+      .img-wrap.refect img
+        filter: blur(3px) brightness(0.5)
+    .img-wrap
+      width: 46%
+      height: auto
+      p
+        text-align: center
+    img
+      width: 100%
