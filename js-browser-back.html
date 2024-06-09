@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browser Back Test</title>
+  </head>
+  <body>
+    <h1>Browser Back Test</h1>
+
+    <a href="/next.html">次のページ</a>
+
+    <script>
+      // history.replaceState(null, null, null);
+      // window.addEventListener('popstate', function (event) {
+      //   alert('Browser back button was pressed!');
+      // });
+
+      const observer = new PerformanceObserver((list) => {
+        list.getEntries().forEach((entry) => {
+          if (entry.type === 'reload') {
+            alert('ブラウザバックしたよ！');
+          }
+        });
+      });
+      // const entries = performance.getEntriesByType('navigation');
+      // entries.forEach((entry) => {
+      //   if (entry.type === 'back_forward') {
+      //     alert('ブラウザバックしたよ！');
+      //   }
+      // });
+    </script>
+  </body>
+</html>
