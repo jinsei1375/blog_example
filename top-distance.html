@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .block {
+      width: 100%;
+      height: 1200px;
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #target {
+      width: 100%;
+      height: 200px;
+      background-color: blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <div class="block">
+        <h2>block要素</h2>
+      </div>
+      <div id="target">
+        <h2>ターゲット要素</h2>
+      </div>
+    </div>
+  </body>
+  <script>
+    function getTopDistanceUsingRect(element) {
+      return element.getBoundingClientRect().top + window.scrollY;
+    }
+
+    const targetElement = document.getElementById('target');
+    console.log(getTopDistanceUsingRect(targetElement));
+  </script>
+</html>
