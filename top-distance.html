@@ -44,5 +44,8 @@
 
     const targetElement = document.getElementById('target');
     console.log(getTopDistanceUsingRect(targetElement));
+    window.addEventListener('scroll', function () {
+      console.log(getTopDistanceUsingRect(targetElement));
+    });
   </script>
 </html>
