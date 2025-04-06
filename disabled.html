@@ -8,7 +8,21 @@
   <body>
     <p>disabled属性button要素</p>
     <button disabled="disabled">クリック</button>
+    <p>disabled属性なしbutton要素</p>
+    <button>クリック</button>
     <p>disabled属性input要素</p>
     <input type="text" disabled />
+    <p>disabled属性なしinput要素</p>
+    <input type="text" />
+    <p>disabled属性button要素を無理やりクリックできるように</p>
+    <div class="disabled-btn-wrap">
+      <button style="pointer-events: none" disabled="disabled">クリック</button>
+    </div>
   </body>
+  <script>
+    const disabledBtn = document.querySelector('.disabled-btn-wrap');
+    disabledBtn.addEventListener('click', function () {
+      alert('クリックできた！');
+    });
+  </script>
 </html>
